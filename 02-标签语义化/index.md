@@ -1,16 +1,23 @@
-- 什么是标签语义化？
+# 1. 什么是标签语义化？
   + 合理的标签做合理的事情
-- 都有哪些标签，都是啥意思？块级标签和行级标签区别？
+## 都有哪些标签，都是啥意思？块级标签和行级标签区别？
   + 行标签 不换行、不可调宽高
     * span img a em strong var
   + 块标签 独占一行、可设置宽高
     * h1-h6 p div ul li ol dl dt dd
-- `display`
+## `display`
   + `none` 脱离文档流、不占空间
   + `block`
   + `inline`
   + `inline-block`
   + `flex`
-- `visibility: hidden`
+## `visibility: hidden`
+
+# 2. 说一下自己擅长那些
+  - 引导面试官发问
+
+# 3. 这个需求怎么做？
+  - 还有吗？
+  - 那种好？
 
 

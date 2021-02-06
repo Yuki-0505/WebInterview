@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 1. 盒子水平垂直居中的五大方案 */
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .box {
+      box-sizing: border-box;
+      width: 100px;
+      height: 50px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid lightblue;
+      background: lightcyan;
+    }
+
+  </style>
+  <!-- <style>
+    /* 方式一 */
+    /* 缺点：必须知道盒子的具体宽高 */
+    body {
+      position: relative;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -25px;
+      margin-left: -50px;
+    }
+
+  </style> -->
+  <!-- <style>
+    /* 方式二 */
+    /* 缺点：不需要知道宽高，但必须要设置宽高 */
+    body {
+      position: relative;
+    }
+
+    .box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+  </style> -->
+  <!-- <style>
+    /* 方式三 */
+    /* 缺点：不需要设置宽高，但浏览器兼容性差 */
+    body {
+      position: relative;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+  </style> -->
+  <!-- <style>
+    /* 方式四 */
+    /* 缺点：浏览器兼容性差 */
+    body {
+      position: relative;
+    }
+
+    body {
+      display: flex;
+      /* x轴居中 */
+      justify-content: center;
+      /* y轴居中 */
+      align-items: center;
+    }
+
+  </style> -->
+  <!-- <style>
+    /* 方式六 */
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      /* 固定宽高 */
+      width: 500px;
+      height: 500px;
+      background: pink;
+    }
+    .box {
+      display: inline-block;
+    }
+  </style> -->
+</head>
+
+<body>
+  <div class="box" id="box">
+    盒子
+  </div>
+
+
+  <!-- <script>
+    // 方式五
+    let HTML = document.documentElement,
+      winW = HTML.clientWidth,
+      winH = HTML.clientHeight,
+      // box = document.querySelector('#box')
+      boxW = box.offsetWidth,
+      boxH = box.offsetHeight
+    box.style.position = 'absolute'
+    box.style.left = (winW - boxW)/2 + 'px'
+    box.style.top = (winH - boxH)/2 + 'px'
+
+  </script> -->
+</body>
+
+</html>
