@@ -51,17 +51,17 @@ Array.prototype.myFlat = function() {
 console.log(arr.myFlat())
 
 Array.prototype.myFlat2 = function() {
-  function fn() {
+  function fn(arr) {
     let result = []
-    for(let item of result) {
+    for(let item of arr) {
       if(Array.isArray(item)) {
-        result.push(...item.fn())
+        result.push(...fn(item))
       } else {
         result.push(item)
       }
     }
     return result
   }
-  return this.fn()
+  return fn(this)
 }
 console.log(arr.myFlat2())

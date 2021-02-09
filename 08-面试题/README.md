@@ -15,6 +15,7 @@
   + 函数中未声明的变量会挂载到window(浏览器运行)/global(node运行)
   + 函数中找不到的变量会在window(浏览器运行)/global(node运行)中找
 - 自执行函数
+  + 自执行函数中this指针指向window(浏览器运行)/global(node运行)
 - 事件循环
 - 等待队列
 - 异步回调
