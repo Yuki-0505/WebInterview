@@ -9,7 +9,7 @@
     * 变量 < 参数 < 函数
 - this
   + 没有调用者的函数中this指向window(浏览器运行)/global(node运行)
-  + 在node中全局作用域不等同与global
+  + 在node中全局作用域不等同于global
   + 浏览器中全局作用域是window
 - 作用域
   + 函数中未声明的变量会挂载到window(浏览器运行)/global(node运行)
