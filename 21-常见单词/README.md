@@ -14,3 +14,5 @@
   + 传播
 - prevent
   + 防止
+- property
+  + 属性
