@@ -1,0 +1,16 @@
+- attribute
+  + 属性
+- arguments
+  + 参数，实参
+- parameter
+  + 参数，形参
+- values
+  + 值
+- item
+  + 项
+- prototype
+  + 原型
+- propagation
+  + 传播
+- prevent
+  + 防止
