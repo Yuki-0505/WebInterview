@@ -5,7 +5,7 @@ function f(s) {
 var obj = {
   a: 2
 }
-var f2 = function() {
+var f2 = function () {
   return f.apply(obj, arguments)
 }
 var b = f2(3)

@@ -7,5 +7,7 @@ var obj = {
 }
 var f2 = obj.f
 var a = 'hello'
+obj.f()
+// > 2
 f2()
 // > 'hello'

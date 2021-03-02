@@ -9,4 +9,4 @@ function n() {
   }
 }
 n()
-// >
+// > Error
