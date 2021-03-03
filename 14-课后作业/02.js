@@ -11,14 +11,15 @@ var y = {
     }
   })(x)
 }
-
+// window.x y.x z.x
+// 2 3 2
+// 4 3 4
 var m = y.z
 m(4)
+// 16 3 7
 // > 7
 y.z(5)
+// 16 15 10
 // > 10
 console.log(x, y.x)
 // > 16 15
-// window.x 2 4 16
-// y.x      3       15
-// z x        4 7   10
