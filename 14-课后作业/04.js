@@ -7,7 +7,7 @@ setTimeout(() => {
 }, 30)
 console.log(4)
 console.time('AA')
-for(let i = 0; i< 90000000; i++) {
+for (let i = 0; i < 90000000; i++) {
 
 }
 console.timeEnd('AA')

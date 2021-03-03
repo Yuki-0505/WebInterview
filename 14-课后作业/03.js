@@ -1,7 +1,9 @@
-var x = 0, y = 1
+var x = 0,
+  y = 1
+
 function fn() {
   x += 2
-  fn = function(y) {
+  fn = function (y) {
     console.log(y + (--x))
   }
   console.log(x, y)

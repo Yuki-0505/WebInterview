@@ -1,6 +1,7 @@
 function A() {
   console.log(1)
 }
+
 function Func() {
   A = function () {
     console.log(2)
@@ -9,7 +10,7 @@ function Func() {
 }
 Func.A = A
 Func.prototype = {
-  A:() => {
+  A: () => {
     console.log(3)
   }
 }
